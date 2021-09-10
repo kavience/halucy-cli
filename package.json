@@ -1,0 +1,25 @@
+{
+  "name": "halucy",
+  "version": "0.0.1",
+  "description": "halucy cli",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "halucy": "./bin/halucy.js"
+  },
+  "keywords": [
+    "halucy"
+  ],
+  "author": "kavience@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^8.1.0",
+    "fs-extra": "^10.0.0",
+    "loadsh": "^0.0.4",
+    "typescript": "^4.4.2",
+    "watchr": "^6.11.0"
+  }
+}
