@@ -38,10 +38,21 @@ program
   .option("-w, --watch", "watch mode")
   .option("-d, --dir", "specify running directory, default is dist")
   .option("-c, --config", "specify file configuration, default is .env")
-  .option("-t, --typescript", "specify typescript file configuration, default is tsconfig.json")
+  .option(
+    "-t, --typescript",
+    "specify typescript file configuration, default is tsconfig.json"
+  )
   .action(start);
 
-program.command("build").description("build halucy project").action(build);
+program
+  .command("build")
+  .option("-d, --dir", "specify running directory, default is dist")
+  .option(
+    "-t, --typescript",
+    "specify typescript file configuration, default is tsconfig.json"
+  )
+  .description("build halucy project")
+  .action(build);
 
 program.parse(process.argv);
 
