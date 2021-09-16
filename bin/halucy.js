@@ -42,6 +42,7 @@ program
     "-t, --typescript",
     "specify typescript file configuration, default is tsconfig.json"
   )
+  .option("-f, --force", "force start server, not compile typescript")
   .action(start);
 
 program
